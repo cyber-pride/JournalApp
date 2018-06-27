@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Journal App</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="don_t_have_account_yet">Don\'t have an account? Sign  up here</string>
+    <string name="or">Or</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="signup">Register</string>
+    <string name="logout">Logout</string>
+    <string name="add">Add Journal</string>
+    <string name="view">View Journal</string>
+    <string name="Add_new">Add New Journal</string>
+    <string name="journal_title">Journal Title</string>
+    <string name="journal_detail">Journal Detail</string>
+    <string name="submit">Submit</string>
+    <string name="edit">Edit</string>
+    <string name="edit_new">Edit  Journal</string>
+
+</resources>

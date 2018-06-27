@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1">
+
+        <TextView
+            android:id="@+id/journal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="journal Title"
+            android:textColor="#303F9F"
+            android:fontFamily="@font/taviraj_bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="18sp"
+            android:lineSpacingMultiplier="0.6"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#303F9F"
+            android:layout_below="@id/journal_title"/>
+
+        <TextView
+            android:id="@+id/journal_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The journal contenet goes here"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"
+            android:textColor="#2b2b2b"
+            android:layout_below="@id/line1"/>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/journal_content"
+          android:paddingRight="10dp"
+          android:paddingLeft="10dp"
+          android:layout_marginBottom="5dp"
+          android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/journal_date"
+            android:text="Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_alignParentLeft="true" />
+
+        <LinearLayout
+            android:id="@+id/function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/journal_edit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/edit"
+                android:clickable="true"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:id="@+id/journal_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:clickable="true"
+                android:onClick="deletef"
+                android:src="@drawable/del" />
+        </LinearLayout>
+      </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
